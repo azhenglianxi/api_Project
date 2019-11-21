@@ -11,5 +11,7 @@ payload='''
         }
         '''
 header={'Content-Type':'application/json'}
-r = requests.post(f'{HOST}/apijson/mgr/sq_mgr/',data=payload,headers=header)
+
+r=requests.post(f'{HOST}/apijson/mgr/sq_mgr/',data=payload.encode(),headers=header )
+
 print(r.json())
