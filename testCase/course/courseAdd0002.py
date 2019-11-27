@@ -41,7 +41,8 @@ for i in range(1,workSheet.nrows):
         else:
             print(">>>>>测试不通过，用例编号：",row[4], row[0],dictBody["reason"])
             workSheetNew.write(i, 7, 'FAIL')
-            # workSheetNew.write(i, 8, dictBody['reason'])
+            if "reason" in dictBody.keys():
+                workSheetNew.write(i, 8, dictBody['reason'])
     elif row[4]=='delete':
         data = json.loads(row[5])
         dictBody = cm.delete(data['id'])
@@ -53,7 +54,8 @@ for i in range(1,workSheet.nrows):
         else:
             print(">>>>>测试不通过，用例编号：",row[4], row[0])
             workSheetNew.write(i, 7, 'FAIL')
-            # workSheetNew.write(i, 8, dictBody['reason'])
+            if "reason" in dictBody.keys():
+                workSheetNew.write(i, 8, dictBody['reason'])
     elif row[4]=='list':
         # 获取第五列数据，转换为字典
         data=json.loads(row[5])
@@ -68,7 +70,8 @@ for i in range(1,workSheet.nrows):
         else:
             print(">>>>>测试不通过，用例编号：",row[4], row[0])
             workSheetNew.write(i, 7, 'FAIL')
-            # workSheetNew.write(i, 8, dictBody['reason'])
+            if "reason" in dictBody.keys():
+                workSheetNew.write(i, 8, dictBody['reason'])
     elif row[4] == 'modify':
         pass
     else:

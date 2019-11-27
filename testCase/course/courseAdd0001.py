@@ -8,7 +8,7 @@ cm = CourseManage()
 cm.login('auto','sdfsdfsdf')
 # # 1.用户登录，调用login 函数
 # loginBoy,sessionid= loginLib.login('auto','sdfsdfsdf')
-# # 2 返回sessionid
+# # 2 返回 sessionid
 # print(sessionid)
 # 3，把sessionid 传给课程 新增函数
 dictBody=cm.add('大学语文'+str(int(time.time()*100000)),' ','1')
