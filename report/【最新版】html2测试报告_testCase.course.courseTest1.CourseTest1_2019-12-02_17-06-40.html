@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my_report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">my_report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2019-12-02 17:06:40</p>
+                <p class='attribute'><strong>Duration: </strong>50.62 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 49, Pass: 42, Fail: 4, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>testCase.course.courseTest1.CourseTest1</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_101</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>执行了测试用例2-1方法
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_102</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">KeyError: 'recode'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 51, in test_102
+    self.assertEqual(str(dictBody["recode"]),"","新增不存在的课程失败l ")
+KeyError: 'recode'
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_103</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: list() missing 1 required positional argument: 'pagesize'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 36, in test_103
+    listDate =self.cm.list(1.900)
+TypeError: list() missing 1 required positional argument: 'pagesize'
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_01</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10001', '功能': '增加课程', '标题': '所有字段正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_02</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10002', '功能': '增加课程', '标题': '填写内容和上一条一样', '预期结果': '错误，课程名已存在', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_03</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10003', '功能': '增加课程', '标题': '不填写课程名，其他正常填写', '预期结果': '报错，缺少课程名', '调用方法': 'add', '请求参数': '{\n  "name":"",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_04</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10004', '功能': '增加课程', '标题': '不填写展示次序，其他正常填写', '预期结果': '报错，缺少展示次序', '调用方法': 'add', '请求参数': '{\n  "name":"大学语文{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":""\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_05</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10005', '功能': '增加课程', '标题': '课程名填写20个汉字，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_06</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10006', '功能': '增加课程', '标题': '课程名填写21个汉字，其他正常填写', '预期结果': '报错，课程名长度太长', '调用方法': 'add', '请求参数': '{\n  "name":"我大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_07</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10007', '功能': '增加课程', '标题': '课程名填写10字以内，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语大学英语大学",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_08</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10008', '功能': '增加课程', '标题': '课程名填写1个汉字，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_104_09</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10009', '功能': '增加课程', '标题': '展示次序填写999，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"999"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+</p><p style="color:maroon;">AssertionError: '2' != '0'
+- 2
++ 0
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 75, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '2' != '0'
+- 2
++ 0
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_10</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10010', '功能': '增加课程', '标题': '展示次序填写1000，其他正常填写', '预期结果': '报错，展示次序长度太长', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"1000"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_104_11</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10011', '功能': '增加课程', '标题': '展示次序填写500，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"500"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+</p><p style="color:maroon;">AssertionError: '2' != '0'
+- 2
++ 0
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 75, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '2' != '0'
+- 2
++ 0
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_104_12</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10012', '功能': '增加课程', '标题': '展示次序填写0，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"0"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+</p><p style="color:maroon;">AssertionError: '2' != '0'
+- 2
++ 0
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 75, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '2' != '0'
+- 2
++ 0
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_13</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10013', '功能': '增加课程', '标题': '展示次序为-1，其他正常填写', '预期结果': '报错，展示次序必须为整数', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"-1"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_14</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10014', '功能': '增加课程', '标题': '展示次序为33.3，其他正常填写', '预期结果': '报错，展示次序必须为整数', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"33.3"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_15</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10015', '功能': '增加课程', '标题': '课程名带有特殊字符$，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学$英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_16</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10016', '功能': '增加课程', '标题': '课程名带有特殊字符*，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学*英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_17</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10017', '功能': '增加课程', '标题': '课程名带有特殊字符&，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学&英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_18</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10018', '功能': '增加课程', '标题': '课程名带有标点符号。，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学。英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_19</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10019', '功能': '增加课程', '标题': '课程名带有标点符号：，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学：英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_20</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10020', '功能': '增加课程', '标题': '课程名前面有空格，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":" 大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_21</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10021', '功能': '增加课程', '标题': '课程名后面有空格，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语 ",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_22</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10022', '功能': '增加课程', '标题': '课程名中间有空格，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学 英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_23</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10023', '功能': '增加课程', '标题': '展示次序填字母，其他正常填写', '预期结果': '报错，展示次序必须为数字', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"ab"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_24</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10024', '功能': '增加课程', '标题': '展示次序填字母+数字，其他正常填写', '预期结果': '报错，展示次序必须为数字', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"a4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_25</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10025', '功能': '增加课程', '标题': '展示次序填标点符号逗号，其他正常填写', '预期结果': '报错，展示次序必须为数字', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":","\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_26</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10026', '功能': '删除课程', '标题': '删除的课程ID为空', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":""}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_27</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10027', '功能': '删除课程', '标题': '删除的课程ID为空格', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":" "}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_28</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10028', '功能': '删除课程', '标题': '删除的课程ID有特殊字符#', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"#"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_29</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10029', '功能': '删除课程', '标题': '删除的课程ID有特殊字符%', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"%"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_30</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10030', '功能': '删除课程', '标题': '删除的课程ID有特殊字符-', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"-"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_31</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10031', '功能': '删除课程', '标题': '删除的课程ID为中文', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"好"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_32</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10032', '功能': '删除课程', '标题': '删除的课程ID为任意数字和字母', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"122abc"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_104_33</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10033', '功能': '删除课程', '标题': '删除的课程ID为任意数字', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"123321"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+</p><p style="color:maroon;">AssertionError: '0' != '2'
+- 0
++ 2
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 75, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '0' != '2'
+- 0
++ 2
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_34</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10034', '功能': '列出课程', '标题': '页码为1，显示条数为20', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"20"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_35</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10035', '功能': '列出课程', '标题': '页码为空，显示条数正常填写', '预期结果': '报错，页码不能为空', '调用方法': 'list', '请求参数': '{"pagenum":"","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_36</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10036', '功能': '列出课程', '标题': '页码为1，显示条数为空', '预期结果': '报错，显示条数不能为空', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":""}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_37</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10037', '功能': '列出课程', '标题': '页码为0，显示条数为20', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"0","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_38</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10038', '功能': '列出课程', '标题': '页码为-1，显示条数为20', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"-1","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_39</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10039', '功能': '列出课程', '标题': '页码为字母，显示条数为20', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"a","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_40</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10040', '功能': '列出课程', '标题': '页码为很大的数，显示条数为20', '预期结果': '报错，页码超过显示范围', '调用方法': 'list', '请求参数': '{"pagenum":"1000","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_41</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10041', '功能': '列出课程', '标题': '页码为1，显示条数0', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"0"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_42</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10042', '功能': '列出课程', '标题': '页码为1，显示条数1', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"1"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_43</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10043', '功能': '列出课程', '标题': '页码为1，显示条数500', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"500"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_44</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10044', '功能': '列出课程', '标题': '页码为1，显示条数1000', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"1000"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_104_45</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10045', '功能': '列出课程', '标题': '页码为1，显示条数1001', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"1001"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_104_46</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'用例编号': '10026', '功能': '删除课程', '标题': '删除的课程ID为空', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":Null}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+</p><p style="color:maroon;">JSONDecodeError: Expecting value: line 1 column 7 (char 6)</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 70, in test_104
+    resule=SendCourseRequest(self.cm,data)
+  File "D:\Program Files\Python_package\Api_Project\lib\SendCourseRequest.py", line 27, in SendCourseRequest
+    data =json.loads(row['请求参数'])
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 7 (char 6)
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 49, Pass: 42, Fail: 4, Error: 3 -- Duration: 50.62 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

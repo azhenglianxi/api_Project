@@ -30,15 +30,13 @@ class CourseTest2(unittest.TestCase):
         self.assertEqual(1, 1, '失败的原因')
 
     #测试用例3
-    def test_203(self):
+    def test_202(self):
         print('执行了测试用例2-3方法')
         self.assertEqual(1,1,'失败的原因')
 
     #测试用例2
     # @unittest.skip('不执行的原因')
-    def test_202(self):
-        print('执行了测试用例2-2方法')
-        self.assertEqual(1, 1, '失败的原因')
+
 
 
 

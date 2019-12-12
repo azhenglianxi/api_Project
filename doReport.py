@@ -1,4 +1,5 @@
 import unittest
+import ddt
 from testCase.course.courseTest1 import CourseTest1
 from testCase.course.courseTest2 import CourseTest2
 import HtmlTestRunner
@@ -14,13 +15,13 @@ from HTMLTestRunner import HTMLTestRunner
 
 
 # 1-2： 用例放入列表中 在添加suite
-suite=unittest.TestSuite()
-list=[CourseTest1("test_101"),CourseTest1("test_103"),CourseTest1("test_102"),CourseTest2("test_202")]
-suite.addTests(list)
+# suite=unittest.TestSuite()
+# list=[CourseTest1("test_101"),CourseTest1("test_103"),CourseTest1("test_102"),CourseTest2("test_202")]
+# suite.addTests(list)
 
 
 # 1-3 :用Testloader类的discover方法来
-#suite=unittest.defaultTestLoader.discover('testCase.course',pattern="*Test*.py")
+suite=unittest.defaultTestLoader.discover('testCase',pattern="*Test*.py")
 
 # 2 运行用例，查看结果
 # 2-1 第1种情况：不使用HtmlTestRunner插件
@@ -40,3 +41,6 @@ suite.addTests(list)
 runner=HtmlTestRunner.HTMLTestRunner(output='./report/',report_name='【最新版】html2测试报告',
                                      report_title='my_report')
 runner.run(suite)
+
+
+

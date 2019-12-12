@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-11-26 20:30:08</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.001990</p>
-<p class='attribute'><strong>Status:</strong> Pass 3 Failure 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-11-28 17:06:47</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:56.588826</p>
+<p class='attribute'><strong>Status:</strong> Pass 44 Failure 4 Error 2</p>
 
 <p class='description'>用例执行详细信息</p>
 </div>
@@ -221,13 +221,13 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='failClass'>
+<tr class='errorClass'>
     <td>testCase.course.courseTest1.CourseTest1</td>
+    <td>48</td>
+    <td>42</td>
     <td>4</td>
     <td>2</td>
-    <td>2</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',48)">Detail</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
@@ -245,10 +245,7 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-pt1.1: 用例第一步：初始化方法
-
-执行力测试用例 101
-用例最后一步 清楚
+pt1.1: 执行了测试用例2-1方法
 
 
         </pre>
@@ -258,25 +255,25 @@ pt1.1: 用例第一步：初始化方法
     </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_103</div></td>
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_102</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
 
-    <div id='div_pt1.2' class="popup_window">
+    <div id='div_ft1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.2: 用例第一步：初始化方法
-
-执行力测试用例 103
-用例最后一步 清楚
+ft1.2: Traceback (most recent call last):
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 51, in test_102
+    self.assertEqual(str(dictBody["recode"]),"","新增不存在的课程失败l ")
+KeyError: 'recode'
 
 
         </pre>
@@ -287,12 +284,12 @@ pt1.2: 用例第一步：初始化方法
 </tr>
 
 <tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_102</div></td>
+    <td class='errorCase'><div class='testcase'>test_103</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        fail</a>
+        error</a>
 
     <div id='div_ft1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
@@ -301,14 +298,10 @@ pt1.2: 用例第一步：初始化方法
         </div>
         <pre>
         
-ft1.3: 用例第一步：初始化方法
-
-执行力测试用例 102
-用例最后一步 清楚
-Traceback (most recent call last):
-  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 33, in test_102
-    self.assertEqual(1, 2, '失败的原因')
-AssertionError: 1 != 2 : 失败的原因
+ft1.3: Traceback (most recent call last):
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 36, in test_103
+    listDate =self.cm.list(1.900)
+TypeError: list() missing 1 required positional argument: 'pagesize'
 
 
         </pre>
@@ -318,29 +311,1199 @@ AssertionError: 1 != 2 : 失败的原因
     </td>
 </tr>
 
-<tr id='ft1.4' class='none'>
-    <td class='failCase'><div class='testcase'>test_102</div></td>
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_01</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
-        fail</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
 
-    <div id='div_ft1.4' class="popup_window">
+    <div id='div_pt1.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.4: 用例第一步：初始化方法
+pt1.4: {'用例编号': '10001', '功能': '增加课程', '标题': '所有字段正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
 
-执行力测试用例 102
-用例最后一步 清楚
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_02</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        pass</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: {'用例编号': '10002', '功能': '增加课程', '标题': '填写内容和上一条一样', '预期结果': '错误，课程名已存在', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_03</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        pass</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.6: {'用例编号': '10003', '功能': '增加课程', '标题': '不填写课程名，其他正常填写', '预期结果': '报错，缺少课程名', '调用方法': 'add', '请求参数': '{\n  "name":"",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_04</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        pass</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.7: {'用例编号': '10004', '功能': '增加课程', '标题': '不填写展示次序，其他正常填写', '预期结果': '报错，缺少展示次序', '调用方法': 'add', '请求参数': '{\n  "name":"大学语文{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":""\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_05</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        pass</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.8: {'用例编号': '10005', '功能': '增加课程', '标题': '课程名填写20个汉字，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_06</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        pass</a>
+
+    <div id='div_pt1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.9: {'用例编号': '10006', '功能': '增加课程', '标题': '课程名填写21个汉字，其他正常填写', '预期结果': '报错，课程名长度太长', '调用方法': 'add', '请求参数': '{\n  "name":"我大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_07</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        pass</a>
+
+    <div id='div_pt1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.10: {'用例编号': '10007', '功能': '增加课程', '标题': '课程名填写10字以内，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语大学英语大学",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_08</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        pass</a>
+
+    <div id='div_pt1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.11: {'用例编号': '10008', '功能': '增加课程', '标题': '课程名填写1个汉字，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.12' class='none'>
+    <td class='failCase'><div class='testcase'>test_104_09</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.12')" >
+        fail</a>
+
+    <div id='div_ft1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.12: {'用例编号': '10009', '功能': '增加课程', '标题': '展示次序填写999，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"999"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
 Traceback (most recent call last):
-  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 33, in test_102
-    self.assertEqual(1, 2, '失败的原因')
-AssertionError: 1 != 2 : 失败的原因
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 76, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '2' != '0'
+- 2
++ 0
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_10</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.13')" >
+        pass</a>
+
+    <div id='div_pt1.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.13: {'用例编号': '10010', '功能': '增加课程', '标题': '展示次序填写1000，其他正常填写', '预期结果': '报错，展示次序长度太长', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"1000"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.14' class='none'>
+    <td class='failCase'><div class='testcase'>test_104_11</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.14')" >
+        fail</a>
+
+    <div id='div_ft1.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.14: {'用例编号': '10011', '功能': '增加课程', '标题': '展示次序填写500，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"500"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 76, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '2' != '0'
+- 2
++ 0
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.15' class='none'>
+    <td class='failCase'><div class='testcase'>test_104_12</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.15')" >
+        fail</a>
+
+    <div id='div_ft1.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.15: {'用例编号': '10012', '功能': '增加课程', '标题': '展示次序填写0，其他正常填写', '预期结果': '正确，返回成功', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"0"\n}\n', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 76, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '2' != '0'
+- 2
++ 0
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_13</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.16')" >
+        pass</a>
+
+    <div id='div_pt1.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.16: {'用例编号': '10013', '功能': '增加课程', '标题': '展示次序为-1，其他正常填写', '预期结果': '报错，展示次序必须为整数', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"-1"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.17' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_14</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.17')" >
+        pass</a>
+
+    <div id='div_pt1.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.17: {'用例编号': '10014', '功能': '增加课程', '标题': '展示次序为33.3，其他正常填写', '预期结果': '报错，展示次序必须为整数', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"33.3"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.18' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_15</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.18')" >
+        pass</a>
+
+    <div id='div_pt1.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.18: {'用例编号': '10015', '功能': '增加课程', '标题': '课程名带有特殊字符$，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学$英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.19' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_16</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.19')" >
+        pass</a>
+
+    <div id='div_pt1.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.19: {'用例编号': '10016', '功能': '增加课程', '标题': '课程名带有特殊字符*，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学*英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.20' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_17</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.20')" >
+        pass</a>
+
+    <div id='div_pt1.20' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.20').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.20: {'用例编号': '10017', '功能': '增加课程', '标题': '课程名带有特殊字符&amp;，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学&amp;英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_18</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.21')" >
+        pass</a>
+
+    <div id='div_pt1.21' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.21').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.21: {'用例编号': '10018', '功能': '增加课程', '标题': '课程名带有标点符号。，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学。英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_19</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.22')" >
+        pass</a>
+
+    <div id='div_pt1.22' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.22').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.22: {'用例编号': '10019', '功能': '增加课程', '标题': '课程名带有标点符号：，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学：英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.23' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_20</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.23')" >
+        pass</a>
+
+    <div id='div_pt1.23' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.23').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.23: {'用例编号': '10020', '功能': '增加课程', '标题': '课程名前面有空格，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":" 大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.24' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_21</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.24')" >
+        pass</a>
+
+    <div id='div_pt1.24' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.24').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.24: {'用例编号': '10021', '功能': '增加课程', '标题': '课程名后面有空格，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语 ",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.25' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_22</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.25')" >
+        pass</a>
+
+    <div id='div_pt1.25' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.25').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.25: {'用例编号': '10022', '功能': '增加课程', '标题': '课程名中间有空格，其他正常填写', '预期结果': '报错，课程名称不能含特殊字符及标点符号', '调用方法': 'add', '请求参数': '{\n  "name":"大学 英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.26' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_23</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.26')" >
+        pass</a>
+
+    <div id='div_pt1.26' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.26').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.26: {'用例编号': '10023', '功能': '增加课程', '标题': '展示次序填字母，其他正常填写', '预期结果': '报错，展示次序必须为数字', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"ab"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.27' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_24</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.27')" >
+        pass</a>
+
+    <div id='div_pt1.27' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.27').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.27: {'用例编号': '10024', '功能': '增加课程', '标题': '展示次序填字母+数字，其他正常填写', '预期结果': '报错，展示次序必须为数字', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"a4"\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.28' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_25</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.28')" >
+        pass</a>
+
+    <div id='div_pt1.28' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.28').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.28: {'用例编号': '10025', '功能': '增加课程', '标题': '展示次序填标点符号逗号，其他正常填写', '预期结果': '报错，展示次序必须为数字', '调用方法': 'add', '请求参数': '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":","\n}\n', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.29' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_26</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.29')" >
+        pass</a>
+
+    <div id='div_pt1.29' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.29').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.29: {'用例编号': '10026', '功能': '删除课程', '标题': '删除的课程ID为空', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":""}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.30' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_27</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.30')" >
+        pass</a>
+
+    <div id='div_pt1.30' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.30').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.30: {'用例编号': '10027', '功能': '删除课程', '标题': '删除的课程ID为空格', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":" "}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.31' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_28</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.31')" >
+        pass</a>
+
+    <div id='div_pt1.31' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.31').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.31: {'用例编号': '10028', '功能': '删除课程', '标题': '删除的课程ID有特殊字符#', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"#"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.32' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_29</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.32')" >
+        pass</a>
+
+    <div id='div_pt1.32' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.32').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.32: {'用例编号': '10029', '功能': '删除课程', '标题': '删除的课程ID有特殊字符%', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"%"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.33' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_30</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.33')" >
+        pass</a>
+
+    <div id='div_pt1.33' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.33').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.33: {'用例编号': '10030', '功能': '删除课程', '标题': '删除的课程ID有特殊字符-', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"-"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.34' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_31</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.34')" >
+        pass</a>
+
+    <div id='div_pt1.34' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.34').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.34: {'用例编号': '10031', '功能': '删除课程', '标题': '删除的课程ID为中文', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"好"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.35' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_32</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.35')" >
+        pass</a>
+
+    <div id='div_pt1.35' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.35').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.35: {'用例编号': '10032', '功能': '删除课程', '标题': '删除的课程ID为任意数字和字母', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"122abc"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.36' class='none'>
+    <td class='failCase'><div class='testcase'>test_104_33</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.36')" >
+        fail</a>
+
+    <div id='div_ft1.36' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.36').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.36: {'用例编号': '10033', '功能': '删除课程', '标题': '删除的课程ID为任意数字', '预期结果': '报错，课程Id不合法或不存在', '调用方法': 'delete', '请求参数': '{"id":"123321"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+Traceback (most recent call last):
+  File "D:\Users\azhenglianxi\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Program Files\Python_package\Api_Project\testCase\course\courseTest1.py", line 76, in test_104
+    self.assertEqual(str(resule['retcode']),str(tests['code']))
+AssertionError: '0' != '2'
+- 0
++ 2
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.37' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_34</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.37')" >
+        pass</a>
+
+    <div id='div_pt1.37' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.37').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.37: {'用例编号': '10034', '功能': '列出课程', '标题': '页码为1，显示条数为20', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"20"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.38' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_35</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.38')" >
+        pass</a>
+
+    <div id='div_pt1.38' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.38').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.38: {'用例编号': '10035', '功能': '列出课程', '标题': '页码为空，显示条数正常填写', '预期结果': '报错，页码不能为空', '调用方法': 'list', '请求参数': '{"pagenum":"","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.39' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_36</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.39')" >
+        pass</a>
+
+    <div id='div_pt1.39' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.39').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.39: {'用例编号': '10036', '功能': '列出课程', '标题': '页码为1，显示条数为空', '预期结果': '报错，显示条数不能为空', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":""}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.40' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_37</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.40')" >
+        pass</a>
+
+    <div id='div_pt1.40' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.40').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.40: {'用例编号': '10037', '功能': '列出课程', '标题': '页码为0，显示条数为20', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"0","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.41' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_38</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.41')" >
+        pass</a>
+
+    <div id='div_pt1.41' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.41').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.41: {'用例编号': '10038', '功能': '列出课程', '标题': '页码为-1，显示条数为20', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"-1","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.42' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_39</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.42')" >
+        pass</a>
+
+    <div id='div_pt1.42' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.42').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.42: {'用例编号': '10039', '功能': '列出课程', '标题': '页码为字母，显示条数为20', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"a","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.43' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_40</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.43')" >
+        pass</a>
+
+    <div id='div_pt1.43' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.43').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.43: {'用例编号': '10040', '功能': '列出课程', '标题': '页码为很大的数，显示条数为20', '预期结果': '报错，页码超过显示范围', '调用方法': 'list', '请求参数': '{"pagenum":"1000","pagesize":"20"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.44' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_41</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.44')" >
+        pass</a>
+
+    <div id='div_pt1.44' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.44').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.44: {'用例编号': '10041', '功能': '列出课程', '标题': '页码为1，显示条数0', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"0"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.45' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_42</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.45')" >
+        pass</a>
+
+    <div id='div_pt1.45' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.45').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.45: {'用例编号': '10042', '功能': '列出课程', '标题': '页码为1，显示条数1', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"1"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.46' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_43</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.46')" >
+        pass</a>
+
+    <div id='div_pt1.46' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.46').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.46: {'用例编号': '10043', '功能': '列出课程', '标题': '页码为1，显示条数500', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"500"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.47' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_44</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.47')" >
+        pass</a>
+
+    <div id='div_pt1.47' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.47').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.47: {'用例编号': '10044', '功能': '列出课程', '标题': '页码为1，显示条数1000', '预期结果': '正确，返回成功', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"1000"}', '断言': '{"code":0}', '执行结果': '', '错误原因': ''}
+测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.48' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_104_45</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.48')" >
+        pass</a>
+
+    <div id='div_pt1.48' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.48').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.48: {'用例编号': '10045', '功能': '列出课程', '标题': '页码为1，显示条数1001', '预期结果': '报错，页码必须大于0', '调用方法': 'list', '请求参数': '{"pagenum":"1","pagesize":"1001"}', '断言': '{"code":2}', '执行结果': '', '错误原因': ''}
+测试通过
 
 
         </pre>
@@ -352,15 +1515,15 @@ AssertionError: 1 != 2 : 失败的原因
 
 <tr class='passClass'>
     <td>testCase.course.courseTest2.CourseTest2</td>
-    <td>1</td>
-    <td>1</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
 </tr>
 
 <tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_202</div></td>
+    <td class='none'><div class='testcase'>test_201</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -375,7 +1538,34 @@ AssertionError: 1 != 2 : 失败的原因
         <pre>
         
 pt2.1: 用例执行前初始化
-执行了测试用例2-2方法
+执行了测试用例2-1方法
+用例执行后清除
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_202</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        pass</a>
+
+    <div id='div_pt2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.2: 用例执行前初始化
+执行了测试用例2-3方法
 用例执行后清除
 
 
@@ -388,10 +1578,10 @@ pt2.1: 用例执行前初始化
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>5</td>
-    <td>3</td>
+    <td>50</td>
+    <td>44</td>
+    <td>4</td>
     <td>2</td>
-    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
